@@ -1,0 +1,14 @@
+{
+    "name": "etec199-2023-filosofia-jogo",
+    "version": "1.0.0",
+    "main": "src/assets/js/main.js",
+    "type": "module",
+    "scripts": {
+      "start": "node main.js",
+      "build": "webpack"
+    },
+    "keywords": [],
+    "author": "####",
+    "license": "ISC",
+    "description": ""
+  }
