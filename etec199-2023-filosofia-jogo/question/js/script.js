@@ -840,17 +840,46 @@ PERGUNTAS = PERGUNTAS
         value
     }) => value)
 
-const questionElement = document.getElementById("question");
-const optionsElement = document.getElementById("options");
-const nextBtn = document.getElementById("nextBtn");
-const progressBar = document.querySelector(".progress-bar");
+function getElement(id) {
+    return document.getElementById(id)
+}
 
 function startQuiz() {
     window.location.href = "quiz.html";
 }
 
+const questionElement = getElement("question");
+const optionsElement = getElement("options");
+const nextBtn = getElement("nextBtn");
+const progressBar = document.querySelector(".progress-bar");
+
 let currentQuestionIndex = 0;
 let ponts = 0
+
+let countHalf = 0
+let countQuarter = 0
+
+function countHelp(tipo) {
+    if(tipo == 2 && countHalf < 2) {
+        countHalf += 1
+    } else if(tipo == 1 && countQuarter < 2) {
+        countQuarter += 1
+    }
+}
+
+function createButtonHelp() {
+    const help = getElement("help")
+    help.innerHTML = ""
+
+    if(countQuarter < 2) {
+        help.innerHTML += '<button class="helpButton" style = "margin-right: 4%" onclick="help(1)">25%</button>'
+    }
+    if(countHalf < 2) {
+        help.innerHTML += '<button class="helpButton" onclick="help(2)">50%</button>'
+    }
+
+    getElement("help").style.display = "block"
+}
 
 function showQuestion(index) {
     const question = PERGUNTAS[index];
@@ -862,6 +891,8 @@ function showQuestion(index) {
     createButton(question.b, optionsElement, "b");
     createButton(question.c, optionsElement, "c");
     createButton(question.d, optionsElement, "d");
+
+    createButtonHelp()
 }
 
 function createButton(option, optionsElement, id) {
@@ -877,17 +908,21 @@ function checkAnswer(answer) {
     const question = PERGUNTAS[currentQuestionIndex];
     const correct = question.correta;
 
-    document.getElementById(answer).style.color = "#fff";
-    document.getElementById(correct).style.color = "#fff";
+    const progressElement = getElement(`progressBar${currentQuestionIndex+1}`)
+    const answerElement = getElement(answer)
+    const correctElement = getElement(correct)
+
+    answerElement.style.color = "#fff";
+    correctElement.style.color = "#fff";
 
     if (question.resp_verifica(answer)) {
-        document.getElementById(answer).style.backgroundColor = "#00b19d";
-        document.getElementById(`progressBar${currentQuestionIndex+1}`).style.backgroundColor = "#00b19d";
+        answerElement.style.backgroundColor = "#00b19d";
+        progressElement.style.backgroundColor = "#00b19d";
         ponts += 10;
     } else {
-        document.getElementById(answer).style.backgroundColor = "red";
-        document.getElementById(`progressBar${currentQuestionIndex+1}`).style.backgroundColor = "red";
-        document.getElementById(correct).style.backgroundColor = "#00b19d";
+        answerElement.style.backgroundColor = "red";
+        progressElement.style.backgroundColor = "red";
+        correctElement.style.backgroundColor = "#00b19d";
     }
 
     nextBtn.disabled = false;
@@ -901,13 +936,29 @@ function checkAnswer(answer) {
     }, 3000);
 }
 
+function help(elimina) {        
+    countHelp(elimina)
+
+    const question = PERGUNTAS[currentQuestionIndex];
+    const options = ["a", "b", "c", "d"]
+    let contador = 1
+
+    options.forEach(
+        option => {
+            if(!question.resp_verifica(option) && contador <= elimina)
+                getElement(option).style.display = "none"
+                contador += 1
+        }
+    )
+
+    getElement("help").style.display = "none"
+}
+
 function nextQuestion() {
     if (currentQuestionIndex == 9) {
-        const quizContainer = document.getElementById("quizContainer");
-        quizContainer.style.display = "none";
-
-        const containerBlack = document.getElementById("containerBlack");
-        containerBlack.style.display = "block";
+        getElement("quizContainer").style.display = "none";
+        getElement("containerBlack").style.display = "block";
+        getElement("pontuacao").innerHTML = pontuacao()
         return
     }
 
@@ -916,8 +967,8 @@ function nextQuestion() {
 }
 
 function trocaDiv(divSair, divEntrar) {
-    document.getElementById(divSair).style.display = "none";
-    document.getElementById(divEntrar).style.display = "block";
+    getElement(divSair).style.display = "none";
+    getElement(divEntrar).style.display = "block";
 }
 
 function pontuacao() {
