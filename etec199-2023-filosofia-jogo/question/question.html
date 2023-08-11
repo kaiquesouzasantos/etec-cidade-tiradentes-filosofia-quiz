@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/styles.css">
-<title>Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Quiz</title>
 </head>
 
 <body>
@@ -14,47 +15,52 @@
 
   <div class="quiz-container" id="quizContainer">
     <div class="quiz">
-      <img src="image/question.svg" class="imgQuestion">
       <a href="../index.html"><img src="image/back.svg" alt="Imagem" class="back"></a>
       <h1 class="quiz-title">SÓCRATES</h1>
       <div id="question" class="question"></div>
-      <div id="options" class="options">
+      <div class="flex">
+        <div id="options" class="options">
+        </div>
+        <img src="image/question.svg" class="imgQuestion">
       </div>
       <br>
-      <button id="nextBtn" class="next-btn" onclick="trocaDiv('quizContainer', 'containerBlack')">Próxima Pergunta</button>
+      <button id="nextBtn" class="next-btn" onclick="trocaDiv('quizContainer', 'containerBlack')">Próxima
+        Pergunta</button>
       <div class="progress-container">
-      <div class="progress-bar" id="progressBar1"></div>
-      <div class="progress-bar" id="progressBar2"></div>
-      <div class="progress-bar" id="progressBar3"></div>
-      <div class="progress-bar" id="progressBar4"></div>
-      <div class="progress-bar" id="progressBar5"></div>
-      <div class="progress-bar" id="progressBar6"></div>
-      <div class="progress-bar" id="progressBar7"></div>
-      <div class="progress-bar" id="progressBar8"></div>
-      <div class="progress-bar" id="progressBar9"></div>
-      <div class="progress-bar" id="progressBar10"></div>
-      
+        <div class="progress-bar" id="progressBar1"></div>
+        <div class="progress-bar" id="progressBar2"></div>
+        <div class="progress-bar" id="progressBar3"></div>
+        <div class="progress-bar" id="progressBar4"></div>
+        <div class="progress-bar" id="progressBar5"></div>
+        <div class="progress-bar" id="progressBar6"></div>
+        <div class="progress-bar" id="progressBar7"></div>
+        <div class="progress-bar" id="progressBar8"></div>
+        <div class="progress-bar" id="progressBar9"></div>
+        <div class="progress-bar" id="progressBar10"></div>
+
       </div>
-   </div>
+    </div>
   </div>
 
 
   <div class="containerBlack" id="containerBlack">
     <div class="quizBlack">
-      <img src="image/pontos.png" class="imgPontos">
       <h1 class="titleBlack">QUIZ CONCLUÍDO</h1>
-      <span class="acertos">Acertos</span>
+      <img src="image/pontos.png" class="imgPontos">
       <div id="question" class="question"></div>
       <div id="options" class="options"></div>
       <br>
-      <a href="../index.html">
-        <button class="button"> Reiniciar </button>
-      </a>
-        <button class="button"> Home </button>
+      <div class="flex-button">
+        <a href="../index.html">
+          <button class="button"> Reiniciar </button>
+        </a>
+        <a href=""><button class="button"> Home </button></a>
       </div>
-   </div>
+    </div>
+  </div>
   </div>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
