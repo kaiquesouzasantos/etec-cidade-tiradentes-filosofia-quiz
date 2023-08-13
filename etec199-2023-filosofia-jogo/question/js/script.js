@@ -11,6 +11,19 @@ class Pergunta {
     resp_verifica(resposta) {
         return resposta.toUpperCase() === this.correta.toUpperCase()
     }
+
+    resp_alternativa(alternativa) {
+        switch(alternativa) {
+            case "a":
+                return this.a
+            case "b":
+                return this.b
+            case "c":
+                return this.c
+            case "d":
+                return this.d
+        }
+    }
 }
 
 let PERGUNTAS = [
@@ -858,12 +871,15 @@ let ponts = 0
 
 let countHalf = 0
 let countQuarter = 0
+let countWord = 0
 
 function countHelp(tipo) {
     if(tipo == 2 && countHalf < 2) {
         countHalf += 1
     } else if(tipo == 1 && countQuarter < 2) {
         countQuarter += 1
+    } else if(tipo == 3 && countWord < 2) {
+        countWord += 1
     }
 }
 
@@ -878,7 +894,11 @@ function createButtonHelp() {
         help.innerHTML += '<button class="helpButton" onclick="help(2)">50%</button>'
     }
 
-    getElement("help").style.display = "block"
+    if(countWord < 2) {
+        help.innerHTML += '<button class="helpButton" onclick="helpWord()">Dica de Palavra</button>'
+    }
+
+    help.style.display = "block"
 }
 
 function showQuestion(index) {
@@ -914,6 +934,8 @@ function checkAnswer(answer) {
 
     answerElement.style.color = "#fff";
     correctElement.style.color = "#fff";
+
+    getElement("word").innerHTML = ""
 
     if (question.resp_verifica(answer)) {
         answerElement.style.backgroundColor = "#00b19d";
@@ -951,6 +973,23 @@ function help(elimina) {
         }
     )
 
+    getElement("word").style.display = "none"
+}
+
+function helpWord() {
+    countHelp(3)
+
+    const question = PERGUNTAS[currentQuestionIndex];
+    let list = question.resp_alternativa(question.correta).split(" ")
+    let word, listSize = list.length
+
+    if(listSize < 4) {
+        word = list[listSize-1]
+    } else {
+        word = list[listSize-3]
+    }
+
+    getElement("word").innerHTML = word
     getElement("help").style.display = "none"
 }
 
