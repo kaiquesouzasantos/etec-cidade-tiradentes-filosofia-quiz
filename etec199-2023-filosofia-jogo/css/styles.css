@@ -93,6 +93,7 @@ body {
   text-transform: uppercase;
   color: #00b19d;
   z-index: 1;
+  position: relative;
 }
 
 .button::before,

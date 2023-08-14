@@ -983,14 +983,14 @@ function createButtonHelp() {
     help.innerHTML = ""
 
     if(countQuarter < 2) {
-        help.innerHTML += '<button class="helpButton" style = "margin-right: 4%" onclick="help(1)">25%</button>'
+        help.innerHTML += '<button class="button" style = "margin-right: 4%" onclick="help(1)" id="helpButton">25%</button>'
     }
     if(countHalf < 2) {
-        help.innerHTML += '<button class="helpButton" onclick="help(2)">50%</button>'
+        help.innerHTML += '<button class="button" onclick="help(2)" id="helpButton1">50%</button>'
     }
 
     if(countWord < 2) {
-        help.innerHTML += '<button class="helpButton wordButton" onclick="helpWord()">Dica de Palavra</button>'
+        help.innerHTML += '<button class="button" onclick="helpWord()" id="helpButton2">Dica de Palavra</button>'
     }
 
     help.style.display = "block"

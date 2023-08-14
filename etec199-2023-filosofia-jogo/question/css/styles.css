@@ -111,15 +111,51 @@ body {
 
 .helpButton {
   margin-top: 10px;
-  padding: 10px 10px;
+  padding: 15px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   transition: background-color 0.5s ease;
-  width: 48%;
+  width: 31%;
+  border: 2px solid;
+  color: #00b19d;
+  margin-right: 9px;
+  position: relative;
+  right: 0px;
+  transition: 1s ease;
+  font-weight: 600;
+  font-family: Montserrat;
 }
 
+.helpButton:hover{
+  background-color: #00b19d;
+  color: white;
+  border-color: #2b2b2b;
+}
+
+#helpButton{
+  position: relative;
+  left: -3px;
+  width: 30%;
+}
+
+#helpButton1{
+  position: relative;
+  right: 14px;
+  width: 30%;
+}
+
+#helpButton2{
+  position: relative;
+
+}
+
+.helpButton:active:before {
+ background: #00b19d;
+ transition: background 0s;
+
+}
 
 .next-btn {
   margin-top: 20px;
@@ -159,7 +195,7 @@ body {
   text-transform: uppercase;
   color: #00b19d;
   z-index: 1;
-  flex: 1;
+  position: relative;
 }
 
 .button::before,
@@ -232,16 +268,36 @@ body {
 }
 
 .mostraDica {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   display: flex;
   padding: 1rem;
   margin-top: 1rem;
   justify-content: center;
   align-items: center;
-  color: black;
-
+  border: 2px solid;
+  color: #00b19d;
+  font-family: Montserrat;
   transition: .3s;
+  font-weight: 1000;
+  border-radius: 5px;
 }
+
+/*  margin-top: 10px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.5s ease;
+  width: 31%;
+  border: 2px solid;
+  color: #00b19d;
+  margin-right: 9px;
+  position: relative;
+  right: 0px;
+  transition: 1s ease;
+  font-weight: 600;
+  font-family: Montserrat;*/
 
 .score-quiz {
   color: white;
@@ -350,10 +406,7 @@ body {
     font-size: 1rem;
     padding: 0 20px;
   }
-  
 }
-
-
 
 @media (max-width: 800px) {
   .flex {
