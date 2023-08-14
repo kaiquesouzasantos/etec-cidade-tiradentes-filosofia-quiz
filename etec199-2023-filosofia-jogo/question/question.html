@@ -16,7 +16,9 @@
   <div class="quiz-container" id="quizContainer">
     <div class="quiz">
       <a href="../index.html"><img src="image/back.svg" alt="Imagem" class="back"></a>
-      <h1 class="quiz-title">SÓCRATES</h1>
+      <div class="quiz-header">
+        <h1 class="quiz-title">SÓCRATES</h1> <p class="pontuacao" id="score"> 0/100  </p>
+      </div>
       <div id="question" class="question"></div>
       <div class="flex">
         <div id="options" class="options">
@@ -39,7 +41,7 @@
         <div class="progress-bar" id="progressBar10"></div>
       </div>
 
-      <center>
+      <center class="helpContainer" id="helpContainer">
         <div id="word"></div>
         <div id="help"></div>
       </center>
@@ -52,7 +54,7 @@
       <h1 class="titleBlack">QUIZ CONCLUÍDO</h1>
       <figure id="container">
         <img src="image/pontos.png" class="imgPontos">
-        <figcaption id="pontuacao"></figcaption>
+          <p id="pontuacao" className="score-quiz">  </p>
       </figure>
       <div id="question" class="question"></div>
       <div id="options" class="options"></div>

@@ -51,6 +51,17 @@ body {
   text-align: center;
 }
 
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-header p {
+  font-size: 2rem;
+  padding: 0 20px;
+}
+
 .quiz-title {
   color: #00b19d;
   max-width: 1000px;
@@ -71,6 +82,10 @@ body {
 .question {
   font-size: 24px;
   margin-bottom: 20px;
+}
+
+.pontuacao {
+  color: #00b19d;
 }
 
 .options {
@@ -216,6 +231,54 @@ body {
   background-color: #f0f0f0;
 }
 
+.mostraDica {
+  background-color: #f0f0f0;
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  transition: .3s;
+}
+
+.score-quiz {
+  color: white;
+}
+
+.display-none {
+  display: none;
+}
+
+.wordButton {
+  width: 100%;
+}
+
+.dica {
+  display: flex;
+  gap: .5rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f0f0f0;
+  color: white;
+  transition: .3s;
+  margin-top: 1rem;
+}
+
+.dica:hover {
+  background-color: #00b19c;
+  color: white;
+  transition: .3s;
+}
+
+.dica p {
+  padding: .5rem 0;
+  margin: 0;
+}
+
 #progressBar {
   border: none;
 }
@@ -227,18 +290,20 @@ body {
 
 #container figcaption {
   position: absolute;
-  top: 145px;
+  top: 150px;
   font-size: 20px;
   color: black;
 }
 
 .imgPontos {
+  min-width: 270px;
   width: 50%;
 }
 
 .imgQuestion {
   width: 40%;
 }
+
 
 .back {
   position: relative;
@@ -258,6 +323,14 @@ body {
   align-self: flex-end;
 }
 
+#pontuacao {
+  color: black;
+  position: absolute;
+  top: 36.52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .acertos {
   color: #121212;
   font-size: 16px;
@@ -272,7 +345,14 @@ body {
   .question {
     font-size: .8rem;
   }
+
+  .quiz-header p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+  
 }
+
 
 
 @media (max-width: 800px) {

@@ -9,7 +9,7 @@ class Pergunta {
     }
 
     resp_verifica(resposta) {
-        return resposta.toUpperCase() === this.correta.toUpperCase()
+        return resposta.toUpperCase() === this.correta.toUpperCase() 
     }
 
     resp_alternativa(alternativa) {
@@ -75,7 +75,8 @@ let PERGUNTAS = [
         "O ensino em escolas filosóficas",
         "O diálogo e a reflexão com os cidadãos nas ruas",
         "A meditação solitária",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "A 'maiêutica' era o método socrático de:",
@@ -83,7 +84,8 @@ let PERGUNTAS = [
         "Autoconhecimento por meio de questionamentos",
         "Meditação e contemplação",
         "Escrita de diálogos filosóficos",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Sócrates acreditava que a busca pelo conhecimento deveria levar ao:",
@@ -91,7 +93,8 @@ let PERGUNTAS = [
         "Conhecimento dos mitos gregos",
         "Conhecimento do mundo natural",
         "Aperfeiçoamento moral e ético",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual foi o crime pelo qual Sócrates foi condenado à morte?",
@@ -99,7 +102,8 @@ let PERGUNTAS = [
         "Impiedade e corrupção da juventude",
         "Homicídio",
         "Traição à cidade-Estado",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Sócrates foi condenado a beber cicuta, uma forma de:",
@@ -107,7 +111,8 @@ let PERGUNTAS = [
         "Vinho envenenado",
         "Substância alucinógena",
         "Óleo essencial",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Quem foi o discípulo mais conhecido de Sócrates, que se tornou um importante filósofo posteriormente?",
@@ -115,7 +120,8 @@ let PERGUNTAS = [
         "Aristóteles",
         "Heráclito",
         "Pitágoras",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Qual era o sistema político predominante em Atenas durante o tempo de Sócrates?",
@@ -123,7 +129,8 @@ let PERGUNTAS = [
         "Ditadura militar",
         "Oligarquia",
         "Democracia direta",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Como Sócrates foi influenciado pelas ações e eventos da Guerra do Peloponeso?",
@@ -131,7 +138,8 @@ let PERGUNTAS = [
         "Foi acusado de traição durante a guerra",
         "Se opôs à guerra e aos conflitos armados",
         "Tornou-se um mercenário a serviço de Esparta",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual foi a principal preocupação filosófica de Sócrates?",
@@ -139,7 +147,8 @@ let PERGUNTAS = [
         "Ética e virtude",
         "Política e organização social",
         "Matemática e ciências naturais",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual foi a principal acusação feita contra Sócrates em seu julgamento?",
@@ -147,7 +156,8 @@ let PERGUNTAS = [
         "Negligência na defesa de Atenas contra invasões",
         "Corrupção e suborno",
         "Desrespeito aos deuses da cidade e corrupção da juventude",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual foi o resultado final do julgamento de Sócrates?",
@@ -155,7 +165,8 @@ let PERGUNTAS = [
         "Prisão perpétua",
         "Pena de morte",
         "Absolvição",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Sócrates considerava-se sábio porque:",
@@ -163,7 +174,8 @@ let PERGUNTAS = [
         "Sabia que não sabia nada",
         "Era considerado o homem mais inteligente de Atenas",
         "Tinha acesso a informações divinas",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual filósofo grego anterior a Sócrates influenciou fortemente o pensamento socrático?",
@@ -171,7 +183,8 @@ let PERGUNTAS = [
         "Tales de Mileto",
         "Parmênides",
         "Anaxágoras",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Em que século Sócrates viveu?",
@@ -179,7 +192,8 @@ let PERGUNTAS = [
         "Século I a.C.",
         "Século V d.C.",
         "Século I d.C.",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "O pensamento socrático influenciou significativamente o desenvolvimento posterior da filosofia através de seu discípulo mais famoso, que foi:",
@@ -187,7 +201,8 @@ let PERGUNTAS = [
         "Platão",
         "Heráclito",
         "Parmênides",
-        "b"
+        "b" 
+        
     ),
 
     // BIOGRAFIA
@@ -198,7 +213,8 @@ let PERGUNTAS = [
         "Sócrates de Mileto",
         "Sócrates de Esparta",
         "Sócrates de Corinto",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Qual foi a data aproximada do nascimento de Sócrates?",
@@ -206,7 +222,8 @@ let PERGUNTAS = [
         "399 a.C.",
         "350 a.C.",
         "300 a.C.",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Qual foi a profissão de Sócrates antes de se dedicar à filosofia?",
@@ -214,7 +231,8 @@ let PERGUNTAS = [
         "Político",
         "Comerciante",
         "Médico",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Sócrates foi casado e teve filhos?",
@@ -222,7 +240,8 @@ let PERGUNTAS = [
         "Sim, casado e com três filhos",
         "Não, era solteiro e não teve filhos",
         "Não, era viúvo e não teve filhos",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como Sócrates costumava se referir ao Oráculo de Delfos, que o chamou de 'o homem mais sábio'?",
@@ -230,7 +249,8 @@ let PERGUNTAS = [
         "Como uma ironia divina",
         "Como um equívoco da sacerdotisa",
         "Como uma profecia a ser cumprida",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual era o método filosófico utilizado por Sócrates?",
@@ -238,7 +258,8 @@ let PERGUNTAS = [
         "Dialética",
         "Empirismo",
         "Materialismo",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Por que Sócrates ficou conhecido como 'o irritante'?",
@@ -246,7 +267,8 @@ let PERGUNTAS = [
         "Por sua habilidade retórica",
         "Por fazer perguntas incômodas",
         "Por sua resistência à autoridade",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Quais eram os temas principais das conversas de Sócrates com os cidadãos de Atenas?",
@@ -254,7 +276,8 @@ let PERGUNTAS = [
         "Artes e poesia",
         "Comércio e economia",
         "Ética e virtude",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Como Sócrates se sentiu em relação à acusação de corromper a juventude de Atenas?",
@@ -262,7 +285,8 @@ let PERGUNTAS = [
         "Despreocupado e indiferente",
         "Arrependido e culpado",
         "Justificando-se e defendendo-se",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Qual foi o resultado do julgamento de Sócrates?",
@@ -270,7 +294,8 @@ let PERGUNTAS = [
         "Exílio voluntário",
         "Prisão perpétua",
         "Pena de morte",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual foi o método de execução utilizado para condenar Sócrates à morte?",
@@ -278,7 +303,8 @@ let PERGUNTAS = [
         "Decapitação",
         "Apedrejamento",
         "Ingestão de cicuta",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Quem foi o discípulo mais conhecido de Sócrates?",
@@ -286,7 +312,8 @@ let PERGUNTAS = [
         "Platão",
         "Heráclito",
         "Parmênides",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Como Sócrates reagiu à sua sentença de morte?",
@@ -294,7 +321,8 @@ let PERGUNTAS = [
         "Fugiu de Atenas para evitar a execução",
         "Pediu clemência ao júri",
         "Planejou um plano de fuga ousado",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Qual foi o principal legado de Sócrates para a filosofia?",
@@ -302,7 +330,8 @@ let PERGUNTAS = [
         "Sua academia filosófica",
         "Seu método de diálogo e questionamento",
         "Suas descobertas científicas",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Quais foram as principais crenças religiosas de Sócrates?",
@@ -310,7 +339,8 @@ let PERGUNTAS = [
         "Ateísmo",
         "Monoteísmo judaico",
         "Dualismo zoroastrista",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Qual foi a idade aproximada de Sócrates quando ele morreu?",
@@ -318,7 +348,8 @@ let PERGUNTAS = [
         "50 anos",
         "70 anos",
         "90 anos",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Sócrates escreveu seus pensamentos e filosofia em livros?",
@@ -326,7 +357,8 @@ let PERGUNTAS = [
         "Não, ele não escreveu nenhum livro",
         "Sim, ele escreveu um único livro",
         "Não, ele ditava seus pensamentos a Platão",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual foi a principal preocupação filosófica de Sócrates?",
@@ -334,7 +366,8 @@ let PERGUNTAS = [
         "Ética e virtude",
         "Política e organização social",
         "Matemática e ciências naturais",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Quais foram as principais influências filosóficas que moldaram o pensamento de Sócrates?",
@@ -342,7 +375,8 @@ let PERGUNTAS = [
         "Filosofia chinesa",
         "Filosofia egípcia",
         "Filosofia pré-socrática",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual foi a principal crítica feita a Sócrates por seus contemporâneos?",
@@ -350,7 +384,8 @@ let PERGUNTAS = [
         "Sua aparência física desagradável",
         "Seu método de diálogo e questionamento",
         "Sua recusa em aceitar a existência dos deuses",
-        "c"
+        "c" 
+        
     ),
 
     // CONCEITO ETICO
@@ -361,7 +396,8 @@ let PERGUNTAS = [
         "A virtude e o conhecimento",
         "A obediência às autoridades",
         "A riqueza material",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Como Sócrates abordava a busca pelo conhecimento?",
@@ -369,7 +405,8 @@ let PERGUNTAS = [
         "Por meio da introspecção e do autoconhecimento",
         "Ignorando completamente a filosofia",
         "Dependendo unicamente da experiência sensorial",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual era a famosa frase de Sócrates relacionada à sabedoria?",
@@ -377,7 +414,8 @@ let PERGUNTAS = [
         "Seja forte e corajoso",
         "O dinheiro é a chave para a felicidade",
         "Nada em excesso",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Como Sócrates via a relação entre virtude e conhecimento?",
@@ -385,7 +423,8 @@ let PERGUNTAS = [
         "O conhecimento é inútil na busca pela virtude",
         "Virtude e conhecimento são inseparáveis",
         "A virtude é mais importante do que o conhecimento",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual era o método de ensino característico de Sócrates?",
@@ -393,7 +432,8 @@ let PERGUNTAS = [
         "Escrita de tratados filosóficos",
         "Diálogo e questionamento com os alunos",
         "Testes e exames rigorosos",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como Sócrates acreditava que as pessoas alcançariam a virtude?",
@@ -401,7 +441,8 @@ let PERGUNTAS = [
         "Pela submissão às autoridades",
         "Por meio do autoconhecimento e questionamento constante",
         "Mediante a posse de bens materiais",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "O que Sócrates quis dizer com 'Só sei que nada sei'?",
@@ -409,7 +450,8 @@ let PERGUNTAS = [
         "Ele não tinha confiança em sua própria inteligência",
         "Ele reconhecia os limites do conhecimento humano",
         "Ele estava sendo modesto sobre sua sabedoria",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual foi a principal crítica feita a Sócrates por seus contemporâneos?",
@@ -417,7 +459,8 @@ let PERGUNTAS = [
         "Sua aparência física desagradável",
         "Seu método de diálogo e questionamento",
         "Sua recusa em aceitar a existência dos deuses",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como a abordagem socrática influenciou o pensamento filosófico subsequente?",
@@ -425,7 +468,8 @@ let PERGUNTAS = [
         "Inspirou o desenvolvimento da filosofia cínica",
         "Criou uma ênfase na fé religiosa",
         "Estabeleceu a importância do questionamento e da busca pela verdade",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual foi o destino de Sócrates devido a suas crenças e ensinamentos?",
@@ -433,7 +477,8 @@ let PERGUNTAS = [
         "Foi condenado à morte por envenenamento",
         "Viveu uma vida longa e próspera",
         "Tornou-se um pregador itinerante",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual foi a contribuição de Sócrates para a ética?",
@@ -441,7 +486,8 @@ let PERGUNTAS = [
         "Enfatizou a importância da virtude e do autoconhecimento",
         "Negou a existência de qualquer padrão ético",
         "Defendeu que a ética não era relevante para a filosofia",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "O que é a ironia socrática?",
@@ -449,7 +495,8 @@ let PERGUNTAS = [
         "A negação completa da importância da razão",
         "Uma forma de diálogo em que o interlocutor finge ignorância para estimular a reflexão",
         "Um método de ensino exclusivamente por meio de palestras",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual foi o impacto da morte de Sócrates sobre Platão?",
@@ -457,7 +504,8 @@ let PERGUNTAS = [
         "Platão ficou traumatizado e não escreveu mais",
         "Platão aprofundou suas próprias ideias filosóficas, influenciadas por Sócrates",
         "Platão tornou-se um crítico ferrenho das crenças de Sócrates",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "O que é a maiêutica, método frequentemente associado a Sócrates?",
@@ -465,7 +513,8 @@ let PERGUNTAS = [
         "Um método de cura através da medicação",
         "Um processo de parto intelectual, ajudando os outros a dar à luz suas próprias ideias",
         "Um método de adivinhação utilizado em rituais religiosos",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como Sócrates se relacionava com os sofistas?",
@@ -473,7 +522,8 @@ let PERGUNTAS = [
         "Ele era um crítico feroz dos sofistas, considerando-os enganadores",
         "Ele compartilhava suas crenças e métodos em sua totalidade",
         "Ele ocasionalmente concordava com algumas ideias dos sofistas",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual foi o papel da filosofia de Sócrates na educação dos jovens?",
@@ -481,7 +531,8 @@ let PERGUNTAS = [
         "Ele ensinava apenas conteúdo acadêmico convencional",
         "Ele enfatizava a importância do autoconhecimento e do questionamento para a educação",
         "Ele ensinava apenas por meio de métodos autoritários",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como Sócrates enfrentou sua condenação à morte?",
@@ -489,7 +540,8 @@ let PERGUNTAS = [
         "Ele se submeteu às autoridades e aceitou a execução por envenenamento",
         "Ele incitou seus seguidores a rebelarem-se contra a sentença",
         "Ele renunciou publicamente às suas crenças filosóficas",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual é o conceito de 'ironia' na filosofia socrática?",
@@ -497,7 +549,8 @@ let PERGUNTAS = [
         "Uma abordagem sarcástica e cínica",
         "Um método de ensino que busca expor contradições nas ideias",
         "Uma demonstração de arrogância intelectual",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Quais são os três principais elementos da filosofia socrática?",
@@ -505,7 +558,8 @@ let PERGUNTAS = [
         "Religião, moralidade e política",
         "Conhecimento, virtude e diálogo",
         "Prazer, riqueza e fama",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "O que é o 'Maiêutica' no contexto da filosofia de Sócrates?",
@@ -513,7 +567,8 @@ let PERGUNTAS = [
         "Uma técnica de meditação profunda",
         "Um método de argumentação sofisticado",
         "Uma técnica de questionamento para revelar o conhecimento interno",
-        "d"
+        "d" 
+        
     ),
 
     // PENSAR NA REALIDADE
@@ -524,7 +579,8 @@ let PERGUNTAS = [
         "Ele via o pensamento crítico como uma forma de evasão da realidade",
         "Ele acreditava que o pensamento crítico era essencial para a busca pela verdade",
         "Ele considerava que o pensamento crítico era prejudicial à mente",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Segundo Sócrates, qual é o propósito do pensamento profundo e reflexivo?",
@@ -532,7 +588,8 @@ let PERGUNTAS = [
         "Estimular a imaginação e a fantasia",
         "Questionar as autoridades",
         "Alcançar um entendimento mais claro da realidade e da verdade",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Como Sócrates via o papel dos sentidos na compreensão da realidade?",
@@ -540,7 +597,8 @@ let PERGUNTAS = [
         "Ele via os sentidos como a única fonte de ilusão",
         "Ele acreditava que os sentidos eram irrelevantes para a compreensão da realidade",
         "Ele via os sentidos como falíveis e enganosos, requerendo questionamento",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual é a importância do questionamento na abordagem socrática à realidade?",
@@ -548,7 +606,8 @@ let PERGUNTAS = [
         "O questionamento é usado para confundir os outros",
         "O questionamento é essencial para analisar e compreender a realidade",
         "O questionamento é prejudicial para a mente humana",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Por que Sócrates considerava o pensamento e a reflexão como uma forma de autoconhecimento?",
@@ -556,7 +615,8 @@ let PERGUNTAS = [
         "Ele acreditava que o pensamento não tinha relação com o autoconhecimento",
         "Ele acreditava que o pensamento levava ao autoengano",
         "Ele acreditava que o pensamento permitia que as pessoas explorassem suas próprias crenças e limitações",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual é a diferença entre o pensamento filosófico de Sócrates e o pensamento mítico tradicional?",
@@ -564,7 +624,8 @@ let PERGUNTAS = [
         "O pensamento filosófico se baseia exclusivamente em crenças religiosas",
         "O pensamento filosófico busca entender a realidade através do questionamento e da razão",
         "O pensamento filosófico promove a aceitação inquestionável das tradições",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Por que Sócrates afirmava que o não saber era preferível ao pensamento simplista?",
@@ -572,7 +633,8 @@ let PERGUNTAS = [
         "Ele acreditava que o não saber era uma forma de humildade",
         "Ele considerava o não saber uma forma de preguiça mental",
         "Ele acreditava que o não saber estimulava o questionamento e o pensamento mais profundo",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Como Sócrates via a relação entre o pensamento e a virtude?",
@@ -580,7 +642,8 @@ let PERGUNTAS = [
         "Ele acreditava que a virtude podia ser alcançada apenas através de rituais religiosos",
         "Ele acreditava que o pensamento crítico era a base da virtude",
         "Ele via a virtude como algo inalcançável para a mente humana",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é o termo grego usado por Sócrates para descrever o exame contínuo e o questionamento da vida?",
@@ -588,7 +651,8 @@ let PERGUNTAS = [
         "Elenchus",
         "Eufemismo",
         "Logos",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Como Sócrates acreditava que o pensamento poderia levar à transformação pessoal?",
@@ -596,7 +660,8 @@ let PERGUNTAS = [
         "Ele acreditava que o pensamento não tinha impacto sobre a transformação pessoal",
         "Ele acreditava que o pensamento estimulava o autoengano",
         "Ele acreditava que o pensamento levava à consciência de nossas próprias crenças e à busca por um melhor entendimento",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Segundo Sócrates, como o pensamento crítico pode ajudar a superar as ilusões?",
@@ -604,7 +669,8 @@ let PERGUNTAS = [
         "O pensamento crítico pode reforçar as ilusões",
         "O pensamento crítico pode expor as ilusões e levar à compreensão da realidade",
         "O pensamento crítico apenas cria mais ilusões",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como o pensamento reflexivo de Sócrates difere da aceitação passiva das crenças?",
@@ -612,7 +678,8 @@ let PERGUNTAS = [
         "O pensamento reflexivo é uma forma de evasão das crenças",
         "A aceitação passiva não envolve questionamento ou análise",
         "A aceitação passiva é uma forma mais profunda de pensamento",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Por que Sócrates enfatizava a importância do autoexame em relação ao pensamento sobre a realidade?",
@@ -620,7 +687,8 @@ let PERGUNTAS = [
         "Ele acreditava que o autoexame levava ao autoengano",
         "Ele considerava o autoexame uma forma de narcisismo",
         "Ele acreditava que o autoexame ajudava a reconhecer nossas próprias limitações e crenças",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Como o pensamento socrático difere da mera opinião?",
@@ -628,7 +696,8 @@ let PERGUNTAS = [
         "O pensamento socrático se baseia exclusivamente em intuição",
         "O pensamento socrático busca entender a realidade por meio do questionamento e da razão",
         "O pensamento socrático é apenas uma forma de opinião",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como o método de problematização de Sócrates pode ajudar na compreensão da realidade?",
@@ -636,7 +705,8 @@ let PERGUNTAS = [
         "Ele ajuda a criar ilusões",
         "Ele estimula a reflexão e a análise crítica, levando a uma compreensão mais profunda da realidade",
         "Ele promove a aceitação cega das crenças tradicionais",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é a relação entre a curiosidade intelectual e o pensamento socrático?",
@@ -644,7 +714,8 @@ let PERGUNTAS = [
         "A curiosidade não tem relação com o pensamento socrático",
         "A curiosidade é essencial para estimular o questionamento e o pensamento reflexivo",
         "A curiosidade não tem importância no pensamento socrático",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como Sócrates acreditava que o pensamento sobre a realidade poderia levar à sabedoria?",
@@ -652,7 +723,8 @@ let PERGUNTAS = [
         "Ele acreditava que a sabedoria podia ser obtida apenas através dos rituais religiosos",
         "Ele acreditava que o pensamento crítico era um obstáculo à sabedoria",
         "Ele acreditava que o pensamento crítico levaria à consciência de nossas próprias crenças e limitações, promovendo uma forma de sabedoria",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual é a importância da autocrítica no pensamento socrático?",
@@ -660,7 +732,8 @@ let PERGUNTAS = [
         "A autocrítica é usada para atacar a autoestima",
         "A autocrítica é essencial para reconhecer e superar nossas próprias limitações e erros",
         "A autocrítica não tem relação com o pensamento socrático",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como o pensamento profundo e reflexivo pode influenciar a tomada de decisões?",
@@ -668,7 +741,8 @@ let PERGUNTAS = [
         "O pensamento profundo não tem influência nas decisões",
         "O pensamento profundo e reflexivo pode levar a decisões mais informadas e fundamentadas",
         "O pensamento profundo não é relevante para a tomada de decisões",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é a relação entre a busca pela verdade e o pensamento na realidade segundo Sócrates?",
@@ -676,7 +750,8 @@ let PERGUNTAS = [
         "O pensamento na realidade é uma forma de evitar a busca pela verdade",
         "O pensamento na realidade envolve questionamento constante e reflexão para alcançar a verdade",
         "A busca pela verdade é alcançada apenas através de revelações divinas",
-        "c"
+        "c" 
+        
     ),
 
     // PROBLEMATIZACAO
@@ -687,7 +762,8 @@ let PERGUNTAS = [
         "A prática de questionar a natureza dos deuses",
         "A investigação e o questionamento constante para alcançar a verdade",
         "A aceitação passiva das crenças tradicionais",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é o objetivo da problematização socrática?",
@@ -695,7 +771,8 @@ let PERGUNTAS = [
         "Desafiar qualquer forma de conhecimento estabelecido",
         "Buscar a verdade e o conhecimento através do questionamento",
         "Promover o relativismo cultural",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Como Sócrates acreditava que a problematização poderia levar à sabedoria?",
@@ -703,7 +780,8 @@ let PERGUNTAS = [
         "Através do estudo aprofundado de textos sagrados",
         "Questionando as crenças e investigando-as até alcançar um entendimento mais profundo",
         "Dependendo exclusivamente da intuição",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é a relação entre a ironia socrática e a problematização?",
@@ -711,7 +789,8 @@ let PERGUNTAS = [
         "A ironia socrática é um método para impor crenças aos outros",
         "A ironia socrática é um método de diálogo que estimula a reflexão e a problematização",
         "A ironia socrática é um método de imitar outros filósofos",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é o papel do conhecimento prévio na problematização socrática?",
@@ -719,7 +798,8 @@ let PERGUNTAS = [
         "Deve ser rejeitado para buscar novas crenças",
         "Deve ser criticamente examinado e questionado",
         "Deve ser transmitido sem questionamento",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Por que a problematização socrática muitas vezes envolvia fazer perguntas a outras pessoas?",
@@ -727,7 +807,8 @@ let PERGUNTAS = [
         "Para constranger e envergonhar os outros",
         "Para criar uma atmosfera de competição",
         "Para incentivar a reflexão e a investigação conjunta",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Como Sócrates usava a problematização para explorar questões morais?",
@@ -735,7 +816,8 @@ let PERGUNTAS = [
         "Ele questionava a validade das leis e normas sociais",
         "Ele evitava completamente a discussão de questões morais",
         "Ele encorajava as pessoas a aceitar os valores morais sem questionamento",
-        "b"
+        "b" 
+        
     ),
     new Pergunta(
         "Qual é a diferença entre um diálogo socrático e um debate tradicional?",
@@ -743,7 +825,8 @@ let PERGUNTAS = [
         "Um diálogo socrático não envolve questionamento ou investigação",
         "Um diálogo socrático busca a verdade por meio do questionamento conjunto",
         "Um diálogo socrático é uma forma de persuasão agressiva",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é a importância do método maiêutico na problematização socrática?",
@@ -751,7 +834,8 @@ let PERGUNTAS = [
         "É um método para expor contradições nos argumentos dos outros",
         "É um método para doutrinação",
         "É um método de questionamento que ajuda a pessoa a dar à luz suas próprias ideias",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Como Sócrates via a relação entre o conhecimento e a virtude na problematização?",
@@ -759,7 +843,8 @@ let PERGUNTAS = [
         "Ele acreditava que o conhecimento era desnecessário para a virtude",
         "Ele acreditava que o conhecimento era essencial para a virtude",
         "Ele acreditava que a virtude era alcançada através da adoração aos deuses",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Quais são os principais aspectos do método maiêutico de Sócrates?",
@@ -767,7 +852,8 @@ let PERGUNTAS = [
         "É um método de introspecção profunda",
         "É um método de questionamento que busca extrair conhecimento interno",
         "É um método de meditação para atingir a iluminação",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é a relação entre a humildade e a problematização socrática?",
@@ -775,7 +861,8 @@ let PERGUNTAS = [
         "A humildade não tem relação com a problematização",
         "A humildade é essencial para admitir a própria ignorância e buscar conhecimento",
         "A humildade é uma característica dos ignorantes",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Qual é o termo grego usado para descrever o questionamento constante e incisivo de Sócrates?",
@@ -783,7 +870,8 @@ let PERGUNTAS = [
         "Eufemismo",
         "Sofisma",
         "Elenchus",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Por que Sócrates afirmava que sua sabedoria estava limitada ao fato de que ele sabia que nada sabia?",
@@ -791,7 +879,8 @@ let PERGUNTAS = [
         "Ele queria mostrar que os outros também não sabiam nada",
         "Ele estava afirmando que não tinha conhecimento algum",
         "Ele estava fazendo uma piada para entreter seus seguidores",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "Qual é a importância do diálogo e do questionamento na filosofia socrática?",
@@ -799,7 +888,8 @@ let PERGUNTAS = [
         "Eles servem apenas para entreter os seguidores",
         "Eles são ferramentas para alcançar a verdade e o autoconhecimento",
         "Eles são métodos para evitar o pensamento crítico",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "O que Sócrates acreditava ser o papel do filósofo em relação à sociedade?",
@@ -807,7 +897,8 @@ let PERGUNTAS = [
         "O filósofo deve permanecer isolado da sociedade",
         "O filósofo deve influenciar a política e a liderança",
         "O filósofo deve estimular a reflexão e o questionamento na sociedade",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Como a problematização socrática difere da mera crítica?",
@@ -815,7 +906,8 @@ let PERGUNTAS = [
         "A problematização socrática é um tipo de ironia",
         "A problematização socrática busca estimular a reflexão e a busca por respostas",
         "A problematização socrática não é diferente da crítica",
-        "c"
+        "c" 
+        
     ),
     new Pergunta(
         "Por que Sócrates costumava dizer que era um 'parasita' de Atenas?",
@@ -823,7 +915,8 @@ let PERGUNTAS = [
         "Ele se considerava uma ameaça à cidade",
         "Ele estava criticando os valores da sociedade ateniense",
         "Ele estava se gabando de sua riqueza",
-        "a"
+        "a" 
+        
     ),
     new Pergunta(
         "O que Sócrates acreditava que aconteceria quando alguém reconhecesse sua própria ignorância?",
@@ -831,7 +924,8 @@ let PERGUNTAS = [
         "A pessoa se afastaria da filosofia",
         "A pessoa teria uma crise existencial",
         "A pessoa estaria aberta para o questionamento e o aprendizado",
-        "d"
+        "d" 
+        
     ),
     new Pergunta(
         "Qual é a relação entre a educação e a problematização na filosofia socrática?",
@@ -840,6 +934,7 @@ let PERGUNTAS = [
         "A educação envolve o questionamento constante e a busca pela verdade",
         "A educação é uma forma de doutrinação",
         "c"
+        
     )
 ]
 
@@ -867,7 +962,7 @@ const nextBtn = getElement("nextBtn");
 const progressBar = document.querySelector(".progress-bar");
 
 let currentQuestionIndex = 0;
-let ponts = 0
+let points = 0
 
 let countHalf = 0
 let countQuarter = 0
@@ -895,7 +990,7 @@ function createButtonHelp() {
     }
 
     if(countWord < 2) {
-        help.innerHTML += '<button class="helpButton" onclick="helpWord()">Dica de Palavra</button>'
+        help.innerHTML += '<button class="helpButton wordButton" onclick="helpWord()">Dica de Palavra</button>'
     }
 
     help.style.display = "block"
@@ -932,30 +1027,36 @@ function checkAnswer(answer) {
     const answerElement = getElement(answer)
     const correctElement = getElement(correct)
 
+    const score = document.getElementById("pontuacao")
+
     answerElement.style.color = "#fff";
     correctElement.style.color = "#fff";
+    score.innerText = pontuacao()
 
     getElement("word").innerHTML = ""
 
     if (question.resp_verifica(answer)) {
         answerElement.style.backgroundColor = "#00b19d";
         progressElement.style.backgroundColor = "#00b19d";
-        ponts += 10;
+        points += 10;
     } else {
         answerElement.style.backgroundColor = "red";
         progressElement.style.backgroundColor = "red";
         correctElement.style.backgroundColor = "#00b19d";
     }
-
+    
     nextBtn.disabled = false;
-
+    
     for (const optionButton of optionsElement.children) {
         optionButton.disabled = true;
     }
-
+    
     setTimeout(function () {
+        getElement("word").classList.remove("mostraDica")
         nextQuestion()
+        showScore()
     }, 3000);
+
 }
 
 function help(elimina) {        
@@ -973,6 +1074,7 @@ function help(elimina) {
         }
     )
 
+    getElement("help").style.display = "none"
     getElement("word").style.display = "none"
 }
 
@@ -989,8 +1091,14 @@ function helpWord() {
         word = list[listSize-3]
     }
 
-    getElement("word").innerHTML = word
     getElement("help").style.display = "none"
+    getElement("word").innerHTML = word
+    getElement("word").style.display = "block"
+    getElement("word").classList.add("mostraDica")
+}
+
+function removeDica() {
+    document.querySelector(".helpContainer").style.display = "none"
 }
 
 function nextQuestion() {
@@ -1000,7 +1108,7 @@ function nextQuestion() {
         getElement("pontuacao").innerHTML = pontuacao()
         return
     }
-
+    
     currentQuestionIndex += 1
     showQuestion(currentQuestionIndex)
 }
@@ -1011,7 +1119,13 @@ function trocaDiv(divSair, divEntrar) {
 }
 
 function pontuacao() {
-    return `${ponts}/100 pts`   
+    return `${(points)}/100`  
 }
+
+function showScore() {
+  document.querySelector(".pontuacao").innerText = pontuacao()
+  document.querySelector("#score").innerText = pontuacao()
+}
+
 
 showQuestion(currentQuestionIndex);
